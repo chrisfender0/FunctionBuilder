@@ -1,6 +1,8 @@
 package alpha;
 
-public class Graph {
+import javax.swing.JPanel;
+
+public class Graph extends JPanel {
 	
 	private Graph() {
 		
