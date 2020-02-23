@@ -1,5 +1,6 @@
 package alpha;
 
+import java.awt.Dimension;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -29,6 +30,10 @@ public class MainWindow extends JFrame{
 		setTitle("Graph");
 		setSize(1000, 1000);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public Dimension getWindowSize() {
+		return this.getSize();
 	}
 
 }
