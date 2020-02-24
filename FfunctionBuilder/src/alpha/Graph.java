@@ -95,6 +95,8 @@ public class Graph extends JPanel {
 	}
 
 	private void drawLine(Graphics g) {
+		
+		double [] plotMe = {10.55, 10.58, 10.63, 10.69, 10.73, 10.88, 11.47, 11.98, 12.02, 12.89};
 
 		int xPoint = 10;
 		int yPoint = 10;
@@ -108,6 +110,11 @@ public class Graph extends JPanel {
 		g2d.setColor(Color.blue);
 		g2d.drawOval(x + xPoint - 1, y - yPoint - 1, 3, 3);
 		g2d.fillOval(x + xPoint - 1, y - yPoint - 1, 3, 3);
+		
+		for(int i=0; i<plotMe.length; i++) {
+			g2d.drawOval(x + xPoint - 1, y - yPoint - 1, 3, 3);
+			g2d.fillOval(x + xPoint - 1, y - yPoint - 1, 3, 3);
+		}
 	}
 
 	private void setXY() {
