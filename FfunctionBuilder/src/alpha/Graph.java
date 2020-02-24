@@ -43,11 +43,11 @@ public class Graph extends JPanel {
 		yAxis.drawLine(x, 0, x, getHeight());
 
 		xText.setColor(Color.black);
-		xText.setFont(new Font(Font.SANS_SERIF, 1, 20));
+		xText.setFont(new Font(Font.SANS_SERIF, 1, 12));
 		xText.drawString("(x)", 30, y + 30);
 
 		yText.setColor(Color.black);
-		yText.setFont(new Font(Font.SANS_SERIF, 1, 20));
+		yText.setFont(new Font(Font.SANS_SERIF, 1, 12));
 		yText.drawString("(y)", x-40, getHeight()-30);
 	}
 
